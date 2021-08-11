@@ -25,8 +25,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 		
 	.csrf().disable()
 		     .authorizeRequests()
-//		     .antMatchers("/signin").permitAll()
-//		     .antMatchers("/public/**").hasRole("NORMAL")
+
 		     .antMatchers("/facility/**").hasRole("ADMIN")
 		      .anyRequest()
 		      .authenticated()

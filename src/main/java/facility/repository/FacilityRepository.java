@@ -8,6 +8,7 @@ package facility.repository;
 
 		public interface FacilityRepository extends JpaRepository<Facility, Long>{
 
+			
 		}
 
 
